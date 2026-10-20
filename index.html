@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Easy Recipe Generator</title>
 </head>
@@ -13,22 +14,18 @@
     </header>
 
     <main>
-      <form>
+      <form id="recipe-generator-form">
         <input type="text" placeholder="Enter the dish name."
         autofocus
         required
         autocomplete="off"
         class="dish-input"
         />
-        <input type="submit" class="submit-button" />
+        <input type="submit" class="submit-button"/>
       </form>
     
 
-    <div class="results">
-        line one of results
-        <br />
-        line two of results
-    </div>
+    <div class="results" id="results"></div>
     </main>
     <footer>
        <p>This AI project was coded by <a href="https://github.com/KpopMama07" target="_blank">Jasmine Tsunoda</a> and is open-sourced on <a href="https://github.com/Tsunoda-Stylings/SheCodesPlusAI" target="_blank">GitHub</a> and is hosted on <a href="https://easy-ai-recipe-generator.netlify.app/" target="_blank">Netlify</a>.</p>
